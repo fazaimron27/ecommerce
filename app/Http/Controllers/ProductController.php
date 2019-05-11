@@ -121,6 +121,11 @@ class ProductController extends Controller
 		]);
 
 		if (isset($request->image)) {
+			// delete old image
+			if(\File::exists(public_path('images/products/'. $product->image))) {
+				\File::delete(public_path('images/products/'. $product->image));
+			}
+
 			// image upload
 			$image = $request->file('image');
 			if($image) {
@@ -153,6 +158,10 @@ class ProductController extends Controller
      */
     public function destroy(Product $product)
     {
+		if(\File::exists(public_path('images/products/'. $product->image))) {
+			\File::delete(public_path('images/products/'. $product->image));
+		}
+
         $product->delete();
 
 		return redirect()->route('product.index')->with('danger', 'The product was successfully deleted');

@@ -18,9 +18,11 @@
     <script src="{{asset('admin/vendor/chartjs/Chart.bundle.min.js')}}"></script>
     <script src="{{asset('admin/vendor/select2/select2.min.js')}}">
     </script>
+    <script src="{{asset('admin/vendor/sweetalert/sweetalert2.js')}}">
+    </script>
 
     <!-- Main JS-->
-    <script src="{{asset('admin/js/main.js')}}"></script>
+	<script src="{{asset('admin/js/main.js')}}"></script>
 
 </body>
 
