@@ -52,7 +52,7 @@
 										<i class="zmdi zmdi-edit"></i>
 									</a>
 									{{ method_field('DELETE') }}
-									<button type="submit" class="item" data-toggle="tooltip" data-placement="top" title="Delete" id="delete-category">
+									<button type="submit" class="item" data-toggle="tooltip" data-placement="top" title="Delete"
 										<i class="zmdi zmdi-delete"></i>
 									</button>
 								</div>
